@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light Blue */
+}
+
+header {
+    background-color: #4169e1; /* Royal Blue */
+    color: #fff; /* White */
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+.created-by {
+    font-size: 0.8em;
+}
+
+main {
+    padding: 20px;
+}
+
+.description {
+    background-color: #fff; /* White */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.try-now {
+    color: #4169e1; /* Royal Blue */
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.app-button {
+    background-color: #4169e1; /* Royal Blue */
+    color: #fff; /* White */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.app-button:hover {
+    background-color: #1e90ff; /* Dodger Blue */
+}

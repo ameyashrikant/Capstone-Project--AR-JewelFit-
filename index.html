@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR JewelFit</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to AR JewelFit</h1>
+        <p class="created-by">Created by Team 06</p>
+    </header>
+    <main>
+        <section class="description">
+            <p>
+                "AR JewelFit" is a cutting-edge web application revolutionizing jewellery shopping through augmented reality. Seamlessly blending virtual and physical worlds, it empowers users to try on a vast array of jewellery pieces in real-time, directly from the comfort of their homes. With its intuitive interface and precise AR rendering, customers can confidently explore various styles, sizes, and designs before purchasing. Elevating the online shopping experience, "AR JewelFit" redefines convenience and engagement, bridging the gap between imagination and reality. Welcome to the future of personalized jewellery shopping, where every piece fits perfectly with just a click."
+            </p>
+            <p class="try-now">Try now</p>
+            <button id="runButton">Run Application</button>
+
+            <script>
+            document.getElementById('runButton').addEventListener('click', function() {
+              fetch('/runcode')
+                .then(response => response.text())
+                .then(message => alert(message))
+                .catch(error => console.error('Error:', error));
+            });
+            </script>
+        </section>
+    </main>
+</body>
+</html>

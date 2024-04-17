@@ -35,7 +35,7 @@ def validate_settings_file():
     """
     Get the data from the settings file
 
-    Author: Asutosh Pati
+    Author: Ameya Shrikant
     Returns:
         dict: Welcome messages from settings file
     """

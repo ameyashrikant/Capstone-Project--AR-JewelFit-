@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR JewelFit: Jewellery shopping through Augmented Reality</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;700&family=Rancho&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-default navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container">
+                <a class="navbar-brand logo" href="#">AR JewelFit</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#guide">How to use</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 left-column">
+                            <div class="keywords">
+                                <p>Innovative</p>
+                                <p>Real-Time</p>
+                                <p>AR JewelFit</p>
+                            </div>
+                            <p class="tagline">Bridging the gap between imagination and reality</p>
+                            <div>
+                                <button id="runButton" class="btn btn-dark">TryOn</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 right-column">
+                            <!-- <img src="/img/home.png" alt="Design" class="img-design"> -->
+                            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                                <!-- <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                </div> -->
+                                <div class="carousel-inner img-design">
+                                  <div class="carousel-item active" data-bs-interval="5000">
+                                    <img src="/img/home.png" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item" data-bs-interval="5000">
+                                      <img src="jewellery/2.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="5000">
+                                        <img src="jewellery/3.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="5000">
+                                        <img src="jewellery/4.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="5000">
+                                        <img src="jewellery/7.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="5000">
+                                        <img src="jewellery/5.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="5000">
+                                        <img src="jewellery/6.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="5000">
+                                      <img src="jewellery/1.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="guide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="/img/guide.png" alt="Design" class="img-design">
+                        </div>
+                        <div class="col-md-4 m-5">
+                            <h2 class="guide-heading text-left">How to use?</h2>
+                            <div class="row section-text">
+                                <div class="col text-center"><kbd>Esc</kbd></div>
+                                <div class="col-10">To exit the application</div>
+                            </div>
+                            <div class="row section-text">
+                                <div class="col text-center"><kbd>N</kbd></div>
+                                <div class="col-10">Move to next jewellery</div>
+                            </div>
+                            <div class="row section-text">
+                                <div class="col text-center"><kbd>P</kbd></div>
+                                <div class="col-10">Move to previous jewellery</div>
+                            </div>
+                            <div class="row section-text">
+                                <div class="col text-center"><kbd>S</kbd></div>
+                                <div class="col-10">Capture the image</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="section-heading mt-5">About Us</h2>
+                            <p class="section-text">
+                                "AR JewelFit" is a cutting-edge web application revolutionizing jewellery shopping through
+                                augmented reality. Seamlessly blending virtual and physical worlds, it empowers users to try
+                                on a vast array of jewellery pieces in real-time, directly from the comfort of their homes.
+                                With its intuitive interface and precise AR rendering, customers can confidently explore
+                                various styles, sizes, and designs before purchasing. Elevating the online shopping
+                                experience, "AR JewelFit" redefines convenience and engagement, bridging the gap between
+                                imagination and reality. Welcome to the future of personalized jewellery shopping, where
+                                every piece fits perfectly with just a click.
+                            </p>
+                        </div>
+                        <div class="col-md-6 right-column">
+                            <img src="/img/about.png" alt="Design" class="img-design">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="container"> 
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="section-heading mb-5">Contact Us</h2>
+                            <form action="https://formspree.io/f/xvoevenp" method="POST" class="section-text contact-us">
+                                <div class="mb-3 w-50">
+                                    <input name="username" type="text" class="form-control" placeholder="Your Name">
+                                </div>
+                                <div class="mb-3 w-50">
+                                    <input name="email" type="email" class="form-control" placeholder="Your Email">
+                                </div>
+                                <div class="mb-3 w-50">
+                                    <textarea name="text" class="form-control" rows="5" placeholder="Your Message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-submit center btn-success">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

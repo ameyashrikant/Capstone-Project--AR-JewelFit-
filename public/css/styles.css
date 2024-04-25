@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+}
+.navbar-nav {
+    margin-left: auto;
+}
+.nav-link {
+    color: #343a40;
+}
+.nav-link:hover {
+    color: #007bff;
+}
+.logo {
+    font-family: "Arizonia", cursive;
+    font-weight: 400;
+}
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.keywords {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.tagline {
+    font-size: 1.5rem;
+    color: #6c757d;
+    font-family: "Poppins", sans-serif;
+}
+.left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.right-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-design {
+    margin-top: 1.5rem;
+    width: 35rem !important;
+    height: 35rem;
+    border: 10px solid #fff;
+    border-radius: 10%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+.section-heading {
+    text-align: center;
+    color: #343a40;
+    text-decoration: underline;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    text-shadow: 3px 1px 2px rgba(55 77 96 / 60%);
+}
+.section-text {
+    text-align: justify;
+    color: #000000;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+.guide-heading {
+    color: #343a40;
+    text-decoration: underline;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    text-shadow: 3px 1px 2px rgba(55 77 96 / 60%);
+    margin: 3rem;
+    width: 80%;
+}
+.outer-container {
+    height: 80vh;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.keyboard-buttons {
+    display: block;
+    width: 50px;
+    text-align: center;
+}
+.contact-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

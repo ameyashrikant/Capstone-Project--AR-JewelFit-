@@ -7,7 +7,7 @@ document.getElementById('runButton').addEventListener('click', function() {
     //     console.log(err);
     // }
 });
-document.getElementById('runButton').addEventListener('click', function() {
+document.getElementById('runButton').addEventListener('click', () => {
     fetch('/runcode').requestPictureInPicture().catch(err => {
         console.log(err);
     }

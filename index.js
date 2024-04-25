@@ -22,4 +22,6 @@ app.get('/runcode', (req, res) => {
   res.send('Application started!');
 });
 
-
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
+});
